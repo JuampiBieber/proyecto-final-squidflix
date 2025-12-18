@@ -1,0 +1,180 @@
+body {
+    background-color: black;
+    border: 2px solid hsl(0, 95%, 33%);
+    box-shadow: 0 0 200px 30px rgba(179, 6, 6, 0.7);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logoCALAMAR {
+    width: 30vw;
+    max-width: 400px;
+    height: auto;
+}
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    width: 80vw;
+    max-width: 800px;
+}
+
+.logo-usuario-contraseña {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    width: 100%;
+}
+
+.etiqueta {
+    width: 5vw;
+    max-width: 70px;
+    height: auto;
+}
+
+.barra {
+    width: 25vw;
+    max-width: 300px;
+    height: auto;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+    width: 100%;
+}
+
+.logoISR  {
+    width: 30vw;
+    max-width: 300px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 95%, 33%);
+    border-radius: 8px;
+    color: hsl(0, 95%, 33%);
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 2px 8px rgba(179, 6, 6, 0.5);
+}
+
+.logoISR:hover {
+    transform: translateY(-4px) scale(1.02);
+    background-color: hsl(0, 95%, 33%);
+    color: white;
+    box-shadow: 0 6px 12px rgba(179, 6, 6, 0.7);
+    z-index: 2;
+}
+
+.iconos {
+    transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+
+.iconos:hover {
+    transform: translateY(-4px) scale(1.02);
+    z-index: 2;
+}
+
+@media (max-width: 1024px) {
+    .general-container {
+        width: 90vw;
+        max-width: 700px;
+    }
+    .logoISR {
+        width: 35vw;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        gap: 3vh;
+    }
+    #logoCALAMAR {
+        width: 60vw;
+        max-width: none;
+    }
+    .etiqueta {
+        width: 10vw;
+        max-width: none;
+    }
+    .barra {
+        width: 60vw;
+        max-width: none;
+    }
+    .logoISR {
+        width: 45vw;
+        max-width: 250px;
+    }
+    .logo-usuario-contraseña {
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .botones {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        border-width: 1px;
+        box-shadow: 0 0 100px 15px rgba(179, 6, 6, 0.7);
+        gap: 4vh;
+    }
+    #logoCALAMAR {
+        width: 80vw;
+    }
+    .etiqueta {
+        width: 15vw;
+    }
+    .barra {
+        width: 85vw;
+    }
+    .botones {
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .logoISR {
+        width: 80vw;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        box-shadow: 0 0 50px 10px rgba(179, 6, 6, 0.7);
+    }
+    #logoCALAMAR {
+        width: 90vw;
+    }
+    .barra {
+        width: 95vw;
+    }
+    .logoISR {
+        width: 90vw;
+        max-width: 200px;
+    }
+}
